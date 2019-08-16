@@ -896,7 +896,7 @@ func init() {
 		}
 
 		// check for integer value
-		min := math.MinInt64
+		min := math.MinInt32
 		if rng[0] != "" {
 			_min, err := strconv.ParseFloat(rng[0], 64)
 			if err != nil {
@@ -905,7 +905,7 @@ func init() {
 			min = int(_min)
 		}
 
-		max := math.MaxInt64
+		max := math.MaxInt32
 		if rng[1] != "" {
 			_max, err := strconv.ParseFloat(rng[1], 64)
 			if err != nil {
